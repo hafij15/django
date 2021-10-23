@@ -4,8 +4,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
-    path('aboutus/', views.about),
-    path('contactus/', views.contact),
+    path('', views.home, name='home'),
+    path('aboutus/', views.about, name='about'),
+    path('contactus/', views.contact, name='contact'),
     path('employee/', include('employee.urls')), # using this include connect with the main app portfolio.
 ]
