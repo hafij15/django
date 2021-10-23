@@ -16,6 +16,12 @@
             <p>Phone No : {{ phone }}</p>
             <p>Age      : {{ age }}</p>
             <p>Address  : {{ address }}</p>
+
+            <ul class="list">
+                {% for emp_friends in friends_name %}
+                <li class="list-item">{{ emp_friends }}</li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 {% endblock %}

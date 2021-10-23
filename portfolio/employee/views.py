@@ -15,5 +15,6 @@ def profile(request):
         'phone' : 1736706699, 
         'age' : 29,
         'address' : "Vill: Shukchar, Post: Chartarapur, P.S: Pabna Sadar, Dist: Pabna",
+        'friends_name' : ['Hafij', 'Sabuj', 'Hasan', 'Mahfuj', 'Fahima', 'Jemey', 'Baten', 'Saleha']
     }
     return render(request, 'employee/profile.html', emp_details)
